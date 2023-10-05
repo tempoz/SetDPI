@@ -18,7 +18,7 @@ This is a sample and simple C++ console project to change windows Scale and Layo
 
 - In the VSCode window that opens, `Open Folder` and navigate to wherever you cloned this repository.
 
-- Tell VSCode that I'm perfectly aboveboard and trustworthy ;)
+- Assure VSCode that I'm a perfectly aboveboard and trustworthy individual ;)
 
 - Hit `Ctrl-Shift-B` to build, and you should see the `.exe` file appear in the top-level directory of the repository.
 

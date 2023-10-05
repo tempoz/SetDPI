@@ -1,6 +1,6 @@
 #include "DpiHelper.h"
 #include <Windows.h>
-#include <cstringt.h>
+// #include <cstringt.h>
 #include <iostream>
 #include <map>
 #include <string>
@@ -187,8 +187,8 @@ int main(int argc, char *argv[])
             DWORD value = static_cast<DWORD>(int(dpiToSet * 0.96));
             int iResult;
             sKeyPath = L"Control Panel\\Desktop\\WindowMetrics\\";
-            iResult = RegOpenKeyEx(HKEY_CURRENT_USER, sKeyPath, NULL, KEY_ALL_ACCESS, &hKey);
-            iResult = RegSetValueEx(hKey, L"AppliedDPI", NULL, REG_DWORD, (const BYTE*)&value, sizeof(value));
+            iResult = RegOpenKeyExW(HKEY_CURRENT_USER, sKeyPath, NULL, KEY_ALL_ACCESS, &hKey);
+            iResult = RegSetValueExW(hKey, L"AppliedDPI", NULL, REG_DWORD, (const BYTE*)&value, sizeof(value));
             RegCloseKey(hKey);
             return 0;
         }

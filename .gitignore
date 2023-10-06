@@ -31,10 +31,6 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
-*.obj
-*.exe
-*.pdb
-*.ilk
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -101,6 +97,7 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
+*.exe
 
 # Chutzpah Test files
 _Chutzpah*
@@ -375,6 +372,7 @@ FodyWeavers.xsd
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+!.vscode/c_cpp_properties.json
 *.code-workspace
 
 # Local History for Visual Studio Code
